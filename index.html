@@ -13,16 +13,29 @@
   <form class="form" novalidate>
     <h2 class="form__title">Log in</h2>
     <label class="form__field">
-      <input class="form__input" type="email" id="email" placeholder="Email" required>
-      <span class="form__error form-error-email">Incorrect field</span>
+      <input class="form__input" type="email" id="email" placeholder="Email" required autocomplete="off">
+      <span class="form__error form-error-email"></span>
     </label>
     <label class="form__field">
-      <input class="form__input" type="phone" id="phone" placeholder="Phone" required>
-      <span class="form__error form-error-phone">Incorrect field</span>
+      <input class="form__input" type="tel" id="phone" placeholder="Phone" minlength="7" required autocomplete="off">
+      <span class="form__error form-error-phone"></span>
     </label>
-    <button class="form__submit">Send</button>
+    <button class="form__submit form__submit_disabled">Send</button>
   </form>
-
+  <form class="form" novalidate>
+    <h2 class="form__title">Another form</h2>
+    <label class="form__field">
+      <input class="form__input" type="text" id="name" placeholder="Name" minlength="2" required autocomplete="off">
+      <span class="form__error form-error-name"></span>
+    </label>
+    <label class="form__field">
+      <input class="form__input" type="password" id="password" placeholder="Password" minlength="7" required
+        autocomplete="off">
+      <span class="form__error form-error-password"></span>
+    </label>
+    <button class="form__submit form__submit_disabled">Send</button>
+  </form>
+  <script src="./js/validation.js"></script>
 </body>
 
 </html>

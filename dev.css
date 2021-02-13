@@ -5,9 +5,11 @@
   justify-content: center;
   align-items: center;
   font-family: Roboto, sans-serif;
+  gap: 50px
 }
 
 .form {
+  width: 300px;
   /* border: 1px dashed salmon; */
   display: flex;
   flex-direction: column;
@@ -47,6 +49,14 @@
 .form__error {
   font-size: 14px;
   color: red;
+  line-height: 1em;
+  min-height: 1em;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.form__error_shown {
+  opacity: 1;
 }
 
 .form__submit {
@@ -59,4 +69,9 @@
   font-weight: 600;
   color: white;
   letter-spacing: 1px;
+}
+
+.form__submit_disabled {
+  background-color: silver;
+  pointer-events: none;
 }
