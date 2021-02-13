@@ -10,10 +10,8 @@
 
 .form {
   width: 300px;
-  /* border: 1px dashed salmon; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .form__title {
@@ -35,16 +33,7 @@
   height: 40px;  
   box-sizing: border-box;
   padding: 0 0 0 7px;
-  /* outline: none; */
 }
-
-/* .form__input:focus {
-  border: 2px solid rgb(26, 26, 26);
-}
-
-.form__input:invalid {
-  border: 2px solid red;
-} */
 
 .form__error {
   font-size: 14px;
@@ -64,7 +53,6 @@
   padding: 0 20px;
   border: none;
   box-sizing: border-box;
-  /* text-transform: uppercase; */
   background-color: darkslateblue;
   font-weight: 600;
   color: white;
